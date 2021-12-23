@@ -1,9 +1,11 @@
-html, body {
-  background-color: #EEE;
+html,
+body {
+  background-color: #eee;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   text-align: center;
   overflow-x: hidden;
 }
@@ -29,7 +31,7 @@ body.scroll {
   align-items: center;
   justify-content: center;
   background: black;
-  color: #EEE;
+  color: #eee;
   font-size: 50px;
 }
 
@@ -45,7 +47,7 @@ body.scroll {
 }
 
 .enter {
-  border: 2px solid #EEE;
+  border: 2px solid #eee;
   padding: 10px 20px;
   background: transparent;
   color: inherit;
@@ -115,70 +117,14 @@ li {
 
 .link {
   width: auto;
-  margin: 0;
   background: none;
   margin: 0 auto;
   color: black;
 }
 
-.link-wrapper {
-  display: flex;
-
-}
-
-.link-wrapper {
-  display: flex;
-
-}
-
-.link-wrapper {
-  display: flex;
-
-}
-
-.link-wrapper {
-  display: flex;
-
-}
-
-.link-wrapper {
-  display: flex;
-
-}
-
-.link-wrapper {
-  display: flex;
-
-}
-
-.link-wrapper {
-  display: flex;
-
-}
-
-.link-wrapper {
-  display: flex;
-
-}
-
-.link-wrapper {
-  display: flex;
-
-}
-
-.link-wrapper {
-  display: flex;
-  
-}
-
-.link svg {
-  width: 20px;
-  stroke: black;
-  transform: rotate(-90deg);
-}
-
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
