@@ -1,20 +1,87 @@
-h1, h2 {
-  font-family: Lato;
-  color: salmon;
-}
-
 html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-y: hidden;
+  max-height: 100vh;
+}
+
+body.scroll {
+  overflow-y: auto;
+  max-height: none;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  color: #EEE;
+  font-size: 50px;
+}
+
+.overlay.hide {
+  opacity: 0;
+  transition: 1500ms opacity 1500ms ease-out;
+}
+
+.hide .overlay-content {
+  opacity: 0;
+  transition: opacity 1500ms ease-out;
+}
+
+.enter {
+  border: 2px solid #EEE;
+  padding: 10px 20px;
+  background: transparent;
+  color: inherit;
+  margin-top: 40px;
 }
 
 .hero {
   position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.teaser {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  padding: 80px 0 0;
+}
+
+.hero svg {
+  width: 40px;
+  stroke: white;
 }
 
 .bg {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .subject-wrapper {
@@ -26,6 +93,34 @@ html, body {
 
 .subject {
   animation: float 4000ms infinite;
+  max-width: 75vw;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.link {
+  border: 2px solid black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  width: auto;
+  margin: 0;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,.2);
+  background: none;
+  margin: 0 auto;
+  margin: 20px 0 50px;
+  text-decoration: none;
+  color: black;
+  gap: 6px;
+}
+
+.link svg {
+  width: 20px;
+  stroke: black;
+  transform: rotate(-90deg);
 }
 
 @keyframes float {
